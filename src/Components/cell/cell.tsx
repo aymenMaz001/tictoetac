@@ -27,7 +27,7 @@ function Cell({id, cell,cells,go,winningMessage,setGo,onSetCells}: CellProps){
     }
     return (
         <div className="cell" onClick={handleClick}>
-            <div className={(cell == "O") ? "cell-O" : "cell-X"}>{cell}</div>
+            <div className={(cell === "O") ? "cell-O" : "cell-X"}>{cell}</div>
         </div>
     );
 }
